@@ -1,0 +1,11 @@
+body {
+    margin: 0;
+    background-color: pink;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    background-color: paleturquoise;
+    padding: 10px;
+}

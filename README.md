@@ -8,38 +8,42 @@ The greatest music app
 ### MVP
  - The user will be able to sign up and log in
  - The user will be able to put track, artist, album into a search field and have all of the matching information populate.
- - The user will be able to add tracks, artists, albums to favorite page
+ - The user will be able to add tracks, artists, albums to favorite/rudimentary profile page
  - The user with an account will be able to see their favorites upon login
+ - The show page for the track/artist/album information will include links to A-Z lyrics and YouTube music videos
  - 
 
 ### Stretch
- - The show page for the track/artist/album information will include links to A-Z lyrics and YouTube music videos
  - Allow users to search and save artists/tracks based on astrology
- - Suggest tracks based upon favs
+ - Suggest tracks/genres based upon favs
+ - Astrology/track community
+ - Users will be able to have fleshed out profile
+ - Users will be able to block tracks/artists/other users
 
  ### API
  - I'll be using theaudiodb.com as my API
+ - Will research astrology API if get to stretch goals
 
-* Monday*:
- * Pin down an API to use
- * Draw wireframe
- * Draw out ERD
- * 
+* Monday:
+  Pin down an API to use
+  Draw wireframe
+  Draw out ERD
+  
 
-* Tuesday*
- * stub out routes
+* Tuesday:
+  
 
-* Wednesday*
- * 
+* Wednesday:
+  
 
-* Thursday*
- *
+* Thursday:
+ 
 
-* Friday*
- *
+* Friday:
+ 
 
-* Saturday*
- *
+* Saturday:
+ 
 
-* Sunday*
- *
+* Sunday:
+ 

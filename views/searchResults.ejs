@@ -1,0 +1,46 @@
+<div> *navbar* Need to have everything except bio be hyperlink Need to have links to other pages on site styling
+</div>
+
+
+<div>
+    <section>
+        // fix add to favs button, it's ugly
+        <% artists.forEach(artist => { %>
+            <%= artist.strArtist %>
+                <form method="POST" action="/users">
+                    <input type="hidden" name="artist" value="<%= artist.strArtist %>">
+                    <input type="submit" value="Add To Favorites">
+                </form>
+                <% }) %>
+    </section>
+    <section>
+        <% artists.forEach(artist => { %>
+            <%= artist.strGenre %>
+                <% }) %>
+    </section>
+    <section>
+        <% artists.forEach(artist => { %>
+            <%= artist.strLabel %>
+                <% }) %>
+    </section>
+    <section>
+        <% artists.forEach(artist => { %>
+            <%= artist.strWebsite %>
+                <% }) %>
+    </section>
+    <section>
+        <% artists.forEach(artist => { %>
+            <%= artist.strFacebook %>
+                <% }) %>
+    </section>
+    <section>
+        <% artists.forEach(artist => { %>
+            <%= artist.strTwitter %>
+                <% }) %>
+    </section>
+    <section>
+        <% artists.forEach(artist => { %>
+            <%= artist.strBiographyEN %>
+                <% }) %>
+    </section>
+</div>
