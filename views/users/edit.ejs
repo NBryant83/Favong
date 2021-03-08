@@ -1,0 +1,12 @@
+<div id="editPage">
+    <form action="POST" action="/users/edit/<%= user.dataValues.id %>?_method=PUT">
+
+        <label for="old-username">Old Username</label>
+        <input type="text" name="oldName">
+
+        <label for="new-username">New Username</label>
+        <input type="text" name="newName">
+
+        <input type="submit" value="Change Username">
+    </form>
+</div>

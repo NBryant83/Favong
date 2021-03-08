@@ -11,13 +11,13 @@ module.exports = (sequelize, DataTypes) => {
          */
         static associate(models) {
             // define association here
-            models.user.hasMany(models.track)
+            models.user.belongsToMany(models.artist, { through: 'users_artists' })
         }
     };
     user.init({
         username: DataTypes.TEXT,
-        password: DataTypes.TEXT,
-        email: DataTypes.TEXT
+        email: DataTypes.TEXT,
+        password: DataTypes.TEXT
     }, {
         sequelize,
         modelName: 'user',

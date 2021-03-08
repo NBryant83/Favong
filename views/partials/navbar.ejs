@@ -1,0 +1,18 @@
+<nav>
+    <div>
+        <% if(!user) { %>
+            <a href="/auth/login">Login</a>
+            <a href="/auth/new">Sign Up</a>
+
+            <% } else { %>
+                <a href="/">Homepage</a>
+                <a href="/users/profile">Profile</a>
+                <a href="/users/edit">Change Username</a>
+                <a href="/auth/logout">Log Out</a>
+
+                <% } %>
+
+    </div>
+
+
+</nav>

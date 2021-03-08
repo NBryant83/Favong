@@ -1,1 +1,24 @@
-<h2>This is where all of the user's favorited artists go</h2>
+<h2>Welcome
+    <%= user.username %>
+</h2>
+
+<div>
+
+    <% artists.forEach(artist => { %>
+        <h1>
+            <a href="<%= artist.strArtist %>"></a>
+        </h1>
+        <p>
+            <%= artist.strArtist %>
+        </p>
+
+        <form method="POST" action="/users/profile/<%= artist.id %>?_method=DELETE">
+            <input type="hidden" name="_method" value="DELETE">
+            <input type="submit" value="Delete Fav">
+        </form>
+
+
+        <% }) %>
+
+
+</div>

@@ -1,46 +1,71 @@
-<div> *navbar* Need to have everything except bio be hyperlink Need to have links to other pages on site styling
-</div>
-
-
 <div>
     <section>
         // fix add to favs button, it's ugly
         <% artists.forEach(artist => { %>
-            <%= artist.strArtist %>
-                <form method="POST" action="/users">
-                    <input type="hidden" name="artist" value="<%= artist.strArtist %>">
-                    <input type="submit" value="Add To Favorites">
-                </form>
-                <% }) %>
+            <h1>
+                <%= artist.strArtist %>
+            </h1>
+            <form method="POST" action="/users/profile">
+                <input type="hidden" name="artist" value="<%= artist.strArtist %>">
+                <input type="submit" value="Add Fav">
+            </form>
+            <% }) %>
     </section>
     <section>
         <% artists.forEach(artist => { %>
-            <%= artist.strGenre %>
-                <% }) %>
+            <h2>
+                <a href="<%= artist.strArtistThumb %>">
+                  <img src="<%= artist.strArtistThumb %>">
+                </a>
+            </h2>
+            <% }) %>
     </section>
     <section>
         <% artists.forEach(artist => { %>
-            <%= artist.strLabel %>
-                <% }) %>
+            <h2>
+                <%= artist.strGenre %>
+            </h2>
+            <% }) %>
     </section>
     <section>
         <% artists.forEach(artist => { %>
-            <%= artist.strWebsite %>
-                <% }) %>
+            <p>
+                <%= artist.strLabel %>
+            </p>
+            <% }) %>
     </section>
     <section>
         <% artists.forEach(artist => { %>
-            <%= artist.strFacebook %>
-                <% }) %>
+            <p>
+                <a href="http://<%= artist.strWebsite %>">
+                    <%= artist.strWebsite %>
+                </a>
+            </p>
+            <% }) %>
     </section>
     <section>
         <% artists.forEach(artist => { %>
-            <%= artist.strTwitter %>
-                <% }) %>
+            <p>
+                <a href="http://<%= artist.strFacebook %>">
+                    <%= artist.strFacebook %>
+                </a>
+            </p>
+            <% }) %>
     </section>
     <section>
         <% artists.forEach(artist => { %>
-            <%= artist.strBiographyEN %>
-                <% }) %>
+            <p>
+                <a href="http://<%= artist.strTwitter %>">
+                    <%= artist.strTwitter %>
+                </a>
+            </p>
+            <% }) %>
+    </section>
+    <section>
+        <% artists.forEach(artist => { %>
+            <p>
+                <%= artist.strBiographyEN %>
+            </p>
+            <% }) %>
     </section>
 </div>
